@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body, html { margin: 0; padding: 0; background: transparent; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+  button { width: 60px; height: 60px; border-radius: 50%; background-color: #1e8aec; border: none; cursor: pointer; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  svg { fill: #ffffff; width: 26px; height: 26px; }
+</style>
+</head>
+<body>
+<audio id="a" src="https://github.io"></audio>
+<button onclick="const a=document.getElementById('a');if(a.paused){a.play();p1.style.display='none';p2.style.display='block'}else{a.pause();p1.style.display='block';p2.style.display='none'}">
+  <svg id="p1" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+  <svg id="p2" viewBox="0 0 24 24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+</button>
+</body>
+</html>
